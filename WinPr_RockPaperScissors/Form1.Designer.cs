@@ -34,9 +34,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.게임모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.묵찌빠ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,6 +86,8 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.LoadCompleted += new System.ComponentModel.AsyncCompletedEventHandler(this.pictureBox2_LoadCompleted);
+            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
             // 
             // label2
             // 
@@ -109,6 +111,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "선택창";
             // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(65, 176);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(65, 28);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.Text = "보";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(65, 121);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(89, 28);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "바위";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -121,28 +143,9 @@
             this.radioButton1.Text = "가위";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(65, 121);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 28);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "바위";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(65, 176);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(65, 28);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.Text = "보";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.게임모드ToolStripMenuItem,
