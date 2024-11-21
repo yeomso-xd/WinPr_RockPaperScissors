@@ -17,22 +17,37 @@ namespace WinPr_RockPaperScissors
             InitializeComponent();
         }
 
-        private void pictureBox2_LoadCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            MessageBox.Show("왜 LoadCompleted 이벤트 안 발생하냐.");
-        }
-
         bool rotateFlag = true; // 1에서 쓰이는 플래그
-        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        private void pictureBox_User_Paint(object sender, PaintEventArgs e)
         {
             /* 1. '사용자의 선택' 그림을 180도 돌려주는 코드 */
             if (rotateFlag)
             {
-                Image imageToRotate = pictureBox2.Image;
+                Image imageToRotate = pictureBox_User.Image;
                 imageToRotate.RotateFlip(RotateFlipType.RotateNoneFlipXY);
-                pictureBox2.Image = imageToRotate;
+                pictureBox_User.Image = imageToRotate;
                 rotateFlag = false;
-            } // TODO: 가위, 바위, 보로 사진이 바뀔 때 rotateFlag = true; 해주셔야 해요.
+            }
+        }
+
+        private void radioButtons_CheckedChanged(object sender, EventArgs e)
+        {
+            rotateFlag = true;
+            if (radioButton_Scissors.Checked)
+            {
+                pictureBox_User.Image = Properties.Resources.scissors;
+                pictureBox_User.Refresh();
+            }
+            else if (radioButton_Rock.Checked)
+            {
+                pictureBox_User.Image = Properties.Resources.rock;
+                pictureBox_User.Refresh();
+            }
+            else
+            {
+                pictureBox_User.Image = Properties.Resources.paper;
+                pictureBox_User.Refresh();
+            }
         }
     }
 }
