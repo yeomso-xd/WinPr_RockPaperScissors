@@ -30,24 +30,16 @@ namespace WinPr_RockPaperScissors
             }
         }
 
-        private void radioButtons_CheckedChanged(object sender, EventArgs e)
+        private void changeUserChoice(object sender, EventArgs e)
         {
+            RadioButton R = sender as RadioButton;
             rotateFlag = true;
-            if (radioButton_Scissors.Checked)
-            {
-                pictureBox_User.Image = Properties.Resources.scissors;
-                pictureBox_User.Refresh();
-            }
-            else if (radioButton_Rock.Checked)
-            {
-                pictureBox_User.Image = Properties.Resources.rock;
-                pictureBox_User.Refresh();
-            }
-            else
-            {
-                pictureBox_User.Image = Properties.Resources.paper;
-                pictureBox_User.Refresh();
-            }
+
+            if (R == radioButton_Scissors)  pictureBox_User.Image = Properties.Resources.scissors;
+            if (R == radioButton_Rock)      pictureBox_User.Image = Properties.Resources.rock;
+            if (R == radioButton_Paper)     pictureBox_User.Image = Properties.Resources.paper;
+
+            pictureBox_User.Refresh();
         }
     }
 }

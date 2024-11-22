@@ -119,7 +119,7 @@
             this.radioButton_Paper.TabIndex = 2;
             this.radioButton_Paper.Text = "보";
             this.radioButton_Paper.UseVisualStyleBackColor = true;
-            this.radioButton_Paper.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
+            this.radioButton_Paper.CheckedChanged += new System.EventHandler(this.changeUserChoice);
             // 
             // radioButton_Rock
             // 
@@ -132,7 +132,7 @@
             this.radioButton_Rock.TabStop = true;
             this.radioButton_Rock.Text = "바위";
             this.radioButton_Rock.UseVisualStyleBackColor = true;
-            this.radioButton_Rock.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
+            this.radioButton_Rock.CheckedChanged += new System.EventHandler(this.changeUserChoice);
             // 
             // radioButton_Scissors
             // 
@@ -143,7 +143,7 @@
             this.radioButton_Scissors.TabIndex = 0;
             this.radioButton_Scissors.Text = "가위";
             this.radioButton_Scissors.UseVisualStyleBackColor = true;
-            this.radioButton_Scissors.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
+            this.radioButton_Scissors.CheckedChanged += new System.EventHandler(this.changeUserChoice);
             // 
             // menuStrip1
             // 
