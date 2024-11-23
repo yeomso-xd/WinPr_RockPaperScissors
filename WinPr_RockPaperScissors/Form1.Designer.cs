@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Computer = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_User = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton_Paper = new System.Windows.Forms.RadioButton();
+            this.radioButton_Rock = new System.Windows.Forms.RadioButton();
+            this.radioButton_Scissors = new System.Windows.Forms.RadioButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.게임모드ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.묵찌빠ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,23 +48,23 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Computer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_Computer
             // 
-            this.pictureBox1.Image = global::WinPr_RockPaperScissors.Properties.Resources.rock;
-            this.pictureBox1.InitialImage = global::WinPr_RockPaperScissors.Properties.Resources.rock;
-            this.pictureBox1.Location = new System.Drawing.Point(379, 142);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_Computer.Image = global::WinPr_RockPaperScissors.Properties.Resources.rock;
+            this.pictureBox_Computer.InitialImage = global::WinPr_RockPaperScissors.Properties.Resources.rock;
+            this.pictureBox_Computer.Location = new System.Drawing.Point(379, 142);
+            this.pictureBox_Computer.Name = "pictureBox_Computer";
+            this.pictureBox_Computer.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox_Computer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Computer.TabIndex = 0;
+            this.pictureBox_Computer.TabStop = false;
             // 
             // label1
             // 
@@ -76,18 +76,17 @@
             this.label1.Text = "컴퓨터의 선택";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
+            // pictureBox_User
             // 
-            this.pictureBox2.Image = global::WinPr_RockPaperScissors.Properties.Resources.rock;
-            this.pictureBox2.InitialImage = global::WinPr_RockPaperScissors.Properties.Resources.rock;
-            this.pictureBox2.Location = new System.Drawing.Point(379, 456);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.LoadCompleted += new System.ComponentModel.AsyncCompletedEventHandler(this.pictureBox2_LoadCompleted);
-            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
+            this.pictureBox_User.Image = global::WinPr_RockPaperScissors.Properties.Resources.rock;
+            this.pictureBox_User.InitialImage = global::WinPr_RockPaperScissors.Properties.Resources.rock;
+            this.pictureBox_User.Location = new System.Drawing.Point(379, 456);
+            this.pictureBox_User.Name = "pictureBox_User";
+            this.pictureBox_User.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_User.TabIndex = 2;
+            this.pictureBox_User.TabStop = false;
+            this.pictureBox_User.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox_User_Paint);
             // 
             // label2
             // 
@@ -101,9 +100,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton_Paper);
+            this.groupBox1.Controls.Add(this.radioButton_Rock);
+            this.groupBox1.Controls.Add(this.radioButton_Scissors);
             this.groupBox1.Location = new System.Drawing.Point(97, 445);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(221, 251);
@@ -111,37 +110,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "선택창";
             // 
-            // radioButton3
+            // radioButton_Paper
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(65, 176);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(65, 28);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.Text = "보";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton_Paper.AutoSize = true;
+            this.radioButton_Paper.Location = new System.Drawing.Point(65, 176);
+            this.radioButton_Paper.Name = "radioButton_Paper";
+            this.radioButton_Paper.Size = new System.Drawing.Size(65, 28);
+            this.radioButton_Paper.TabIndex = 2;
+            this.radioButton_Paper.Text = "보";
+            this.radioButton_Paper.UseVisualStyleBackColor = true;
+            this.radioButton_Paper.CheckedChanged += new System.EventHandler(this.changeUserChoice);
             // 
-            // radioButton2
+            // radioButton_Rock
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(65, 121);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 28);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "바위";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_Rock.AutoSize = true;
+            this.radioButton_Rock.Checked = true;
+            this.radioButton_Rock.Location = new System.Drawing.Point(65, 121);
+            this.radioButton_Rock.Name = "radioButton_Rock";
+            this.radioButton_Rock.Size = new System.Drawing.Size(89, 28);
+            this.radioButton_Rock.TabIndex = 1;
+            this.radioButton_Rock.TabStop = true;
+            this.radioButton_Rock.Text = "바위";
+            this.radioButton_Rock.UseVisualStyleBackColor = true;
+            this.radioButton_Rock.CheckedChanged += new System.EventHandler(this.changeUserChoice);
             // 
-            // radioButton1
+            // radioButton_Scissors
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(65, 66);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 28);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "가위";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton_Scissors.AutoSize = true;
+            this.radioButton_Scissors.Location = new System.Drawing.Point(65, 66);
+            this.radioButton_Scissors.Name = "radioButton_Scissors";
+            this.radioButton_Scissors.Size = new System.Drawing.Size(89, 28);
+            this.radioButton_Scissors.TabIndex = 0;
+            this.radioButton_Scissors.Text = "가위";
+            this.radioButton_Scissors.UseVisualStyleBackColor = true;
+            this.radioButton_Scissors.CheckedChanged += new System.EventHandler(this.changeUserChoice);
             // 
             // menuStrip1
             // 
@@ -254,16 +256,16 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox_User);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox_Computer);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "가위바위보!";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Computer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -277,14 +279,14 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox_Computer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox_User;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton_Paper;
+        private System.Windows.Forms.RadioButton radioButton_Rock;
+        private System.Windows.Forms.RadioButton radioButton_Scissors;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 게임모드ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 묵찌빠ToolStripMenuItem;
