@@ -41,5 +41,31 @@ namespace WinPr_RockPaperScissors
 
             pictureBox_User.Refresh();
         }
+
+        // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
+        private int win = 0;
+        private int lose = 0;
+
+        private void Rock_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int a = random.Next(0, 3); // 0, 1, 2 중 랜덤으로 선택
+
+            if (a == 0)
+            {
+                win += 1; //승리 시 win 1씩 증가
+                MessageBox.Show("승리!");
+            }
+            else if (a == 1)
+            {
+                MessageBox.Show("무승부!");
+            }
+            else if (a == 2)
+            {
+                lose += 1; //패배 시 lose 1씩 증가
+                MessageBox.Show("패배!");
+            }
+        }
+
     }
 }
