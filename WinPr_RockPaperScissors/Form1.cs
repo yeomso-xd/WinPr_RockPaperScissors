@@ -17,6 +17,8 @@ namespace WinPr_RockPaperScissors
             InitializeComponent();
         }
 
+        /////////////// 같이 적는 부분 시작! ///////////////
+
         // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
         private int win = 0;
         private int lose = 0;
