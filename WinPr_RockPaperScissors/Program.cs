@@ -15,7 +15,6 @@ namespace WinPr_RockPaperScissors
         {
             Random random = new Random(); // Random 객체 생성
             int cpuChoice = random.Next(0, 3); // 0부터 2까지의 랜덤 값 생성 (0, 1, 2)
-
         }
 
 
