@@ -17,6 +17,10 @@ namespace WinPr_RockPaperScissors
             InitializeComponent();
         }
 
+        // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
+        private int win = 0;
+        private int lose = 0;
+
         /* 01~02 */
         static void CpuChoice(string[] args)
         {
@@ -27,10 +31,6 @@ namespace WinPr_RockPaperScissors
         /* 3-1 */
 
         /* 3-2 */
-        // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
-        private int win = 0;
-        private int lose = 0;
-
         private void Rock_Click(object sender, EventArgs e)
         {
             Random random = new Random();
