@@ -17,31 +17,16 @@ namespace WinPr_RockPaperScissors
             InitializeComponent();
         }
 
-        bool rotateFlag = true; // 1에서 쓰이는 플래그
-        private void pictureBox_User_Paint(object sender, PaintEventArgs e)
+        /* 01~02 */
+        static void CpuChoice(string[] args)
         {
-            /* 1. '사용자의 선택' 그림을 180도 돌려주는 코드 */
-            if (rotateFlag)
-            {
-                Image imageToRotate = pictureBox_User.Image;
-                imageToRotate.RotateFlip(RotateFlipType.RotateNoneFlipXY);
-                pictureBox_User.Image = imageToRotate;
-                rotateFlag = false;
-            }
+            Random random = new Random(); // Random 객체 생성
+            int cpuChoice = random.Next(0, 3); // 0부터 2까지의 랜덤 값 생성 (0, 1, 2)
         }
 
-        private void changeUserChoice(object sender, EventArgs e)
-        {
-            RadioButton R = sender as RadioButton;
-            rotateFlag = true;
+        /* 3-1 */
 
-            if (R == radioButton_Scissors)  pictureBox_User.Image = Properties.Resources.scissors;
-            if (R == radioButton_Rock)      pictureBox_User.Image = Properties.Resources.rock;
-            if (R == radioButton_Paper)     pictureBox_User.Image = Properties.Resources.paper;
-
-            pictureBox_User.Refresh();
-        }
-
+        /* 3-2 */
         // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
         private int win = 0;
         private int lose = 0;
@@ -67,5 +52,38 @@ namespace WinPr_RockPaperScissors
             }
         }
 
+        /* 3-3 */
+
+        /* 04~05 */
+
+        /////////////// 같이 적는 부분 끝! ///////////////
+
+
+
+        /////////////// GUI를 위한 코드 ///////////////
+        bool rotateFlag = true; // 1에서 쓰이는 플래그
+        private void pictureBox_User_Paint(object sender, PaintEventArgs e)
+        {
+            /* 1. '사용자의 선택' 그림을 180도 돌려주는 코드 */
+            if (rotateFlag)
+            {
+                Image imageToRotate = pictureBox_User.Image;
+                imageToRotate.RotateFlip(RotateFlipType.RotateNoneFlipXY);
+                pictureBox_User.Image = imageToRotate;
+                rotateFlag = false;
+            }
+        }
+
+        private void changeUserChoice(object sender, EventArgs e)
+        {
+            RadioButton R = sender as RadioButton;
+            rotateFlag = true;
+
+            if (R == radioButton_Scissors)  pictureBox_User.Image = Properties.Resources.scissors;
+            if (R == radioButton_Rock)      pictureBox_User.Image = Properties.Resources.rock;
+            if (R == radioButton_Paper)     pictureBox_User.Image = Properties.Resources.paper;
+
+            pictureBox_User.Refresh();
+        }
     }
 }
