@@ -35,8 +35,7 @@ namespace WinPr_RockPaperScissors
         /* 3-2 */
         private void Rock_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
-            int a = random.Next(0, 3); // 0, 1, 2 중 랜덤으로 선택
+            int a = CpuChoice();
 
             if (a == 0)
             {
