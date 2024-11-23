@@ -17,24 +17,27 @@ namespace WinPr_RockPaperScissors
             InitializeComponent();
         }
 
+        /////////////// 같이 적는 부분 시작! ///////////////
+
+        // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
+        private int win = 0;
+        private int lose = 0;
+
         /* 01~02 */
-        static void CpuChoice(string[] args)
+        private int CpuChoice()
         {
             Random random = new Random(); // Random 객체 생성
             int cpuChoice = random.Next(0, 3); // 0부터 2까지의 랜덤 값 생성 (0, 1, 2)
+
+            return cpuChoice;
         }
 
         /* 3-1 */
 
         /* 3-2 */
-        // 승리횟수 = win, 패배횟수 = lose 의 초기값 0으로 설정
-        private int win = 0;
-        private int lose = 0;
-
         private void Rock_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
-            int a = random.Next(0, 3); // 0, 1, 2 중 랜덤으로 선택
+            int a = CpuChoice();
 
             if (a == 0)
             {
