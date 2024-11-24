@@ -56,6 +56,44 @@ namespace WinPr_RockPaperScissors
         }
 
         /* 3-3 */
+        
+        // 승리 및 패배 횟수 변수
+        int winCount = 0;
+        int loseCount = 0;
+
+        // '보' 버튼 클릭 이벤트 핸들러
+        private void btnPaper_Click(object sender, EventArgs e)
+        {
+            PlayGame(2); // '보'는 2로 설정
+        }
+
+        private void PlayGame(int playerChoice)
+        {
+            Random random = new Random();
+            int a = random.Next(0, 3); // 컴퓨터의 선택 (0=가위, 1=바위, 2=보)
+
+            if (playerChoice == 2) // 플레이어가 '보'를 선택한 경우
+            {
+                if (a == 0) // 컴퓨터가 가위
+                {
+                    MessageBox.Show("무승부! 컴퓨터도 가위를 냈습니다.", "결과");
+                }
+                else if (a == 1) // 컴퓨터가 바위
+                {
+                    loseCount++;
+                    MessageBox.Show("패배! 컴퓨터는 바위를 냈습니다.", "결과");
+                }
+                else if (a == 2) // 컴퓨터가 보
+                {
+                    winCount++;
+                    MessageBox.Show("승리! 컴퓨터는 보를 냈습니다.", "결과");
+                }
+            }
+
+            // 승리 및 패배 횟수를 화면에 표시
+            //lblWinCount.Text = "승리: " + winCount.ToString();
+            //lblLoseCount.Text = "패배: " + loseCount.ToString();
+        }
 
         /* 04~05 */
 
