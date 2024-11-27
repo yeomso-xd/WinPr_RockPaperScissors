@@ -28,6 +28,7 @@ namespace WinPr_RockPaperScissors
         /* 3-1 */
         private void radioButton_Scissors_Click(object sender, EventArgs e)
         {
+            rotateFlag = true;
             if (radioButton_Scissors.Checked == true)
             {
                 pictureBox_User.Image = Properties.Resources.scissors;
@@ -38,6 +39,7 @@ namespace WinPr_RockPaperScissors
         /* 3-2 */
         private void radioButton_Rock_Click(object sender, EventArgs e)
         {
+            rotateFlag = true;
             if (radioButton_Rock.Checked == true)
             {
                 pictureBox_User.Image = Properties.Resources.rock;
@@ -49,6 +51,7 @@ namespace WinPr_RockPaperScissors
         // '보' 버튼 클릭 이벤트 핸들러
         private void radioButton_Paper_Click(object sender, EventArgs e)
         {
+            rotateFlag = true;
             if (radioButton_Paper.Checked == true)
             {
                 pictureBox_User.Image = Properties.Resources.paper;
