@@ -23,34 +23,25 @@ namespace WinPr_RockPaperScissors
         private int win = 0;
         private int lose = 0;
 
-        private void radioButton_Scissors_Click(object sender, EventArgs e)
+        private void button_Scissors_Click(object sender, EventArgs e)
         {
             rotateFlag = true;
-            if (radioButton_Scissors.Checked == true)
-            {
-                pictureBox_User.Image = Properties.Resources.scissors;
-                PlayGame(1); // '가위'는 1로 설정
-            }
+            pictureBox_User.Image = Properties.Resources.scissors;
+            PlayGame(1); // '가위'는 1로 설정
         }
 
-        private void radioButton_Rock_Click(object sender, EventArgs e)
+        private void button_Rock_Click(object sender, EventArgs e)
         {
             rotateFlag = true;
-            if (radioButton_Rock.Checked == true)
-            {
-                pictureBox_User.Image = Properties.Resources.rock;
-                PlayGame(0); // '바위'는 0로 설정
-            }
+            pictureBox_User.Image = Properties.Resources.rock;
+            PlayGame(0); // '바위'는 0로 설정
         }
 
-        private void radioButton_Paper_Click(object sender, EventArgs e)
+        private void button_Paper_Click(object sender, EventArgs e)
         {
             rotateFlag = true;
-            if (radioButton_Paper.Checked == true)
-            {
-                pictureBox_User.Image = Properties.Resources.paper;
-                PlayGame(-1); // '보'는 -1로 설정
-            }
+            pictureBox_User.Image = Properties.Resources.paper;
+            PlayGame(-1); // '보'는 -1로 설정
         }
 
         private void PlayGame(int playerChoice)
