@@ -119,7 +119,7 @@
             this.radioButton_Paper.TabIndex = 2;
             this.radioButton_Paper.Text = "보";
             this.radioButton_Paper.UseVisualStyleBackColor = true;
-            this.radioButton_Paper.CheckedChanged += new System.EventHandler(this.changeUserChoice);
+            this.radioButton_Paper.CheckedChanged += new System.EventHandler(this.radioButton_Paper_Click);
             // 
             // radioButton_Rock
             // 
@@ -132,7 +132,7 @@
             this.radioButton_Rock.TabStop = true;
             this.radioButton_Rock.Text = "바위";
             this.radioButton_Rock.UseVisualStyleBackColor = true;
-            this.radioButton_Rock.CheckedChanged += new System.EventHandler(this.changeUserChoice);
+            this.radioButton_Rock.CheckedChanged += new System.EventHandler(this.radioButton_Rock_Click);
             // 
             // radioButton_Scissors
             // 
@@ -143,7 +143,7 @@
             this.radioButton_Scissors.TabIndex = 0;
             this.radioButton_Scissors.Text = "가위";
             this.radioButton_Scissors.UseVisualStyleBackColor = true;
-            this.radioButton_Scissors.CheckedChanged += new System.EventHandler(this.changeUserChoice);
+            this.radioButton_Scissors.CheckedChanged += new System.EventHandler(this.radioButton_Scissors_Click);
             // 
             // menuStrip1
             // 
@@ -181,13 +181,13 @@
             // rPS15ToolStripMenuItem1
             // 
             this.rPS15ToolStripMenuItem1.Name = "rPS15ToolStripMenuItem1";
-            this.rPS15ToolStripMenuItem1.Size = new System.Drawing.Size(110, 36);
+            this.rPS15ToolStripMenuItem1.Size = new System.Drawing.Size(112, 36);
             this.rPS15ToolStripMenuItem1.Text = "RPS-15";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("굴림", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label3.Location = new System.Drawing.Point(122, 70);
             this.label3.Name = "label3";
@@ -198,7 +198,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Font = new System.Drawing.Font("굴림", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.Location = new System.Drawing.Point(84, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 53);
@@ -208,7 +208,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Font = new System.Drawing.Font("굴림", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.IndianRed;
             this.label5.Location = new System.Drawing.Point(41, 70);
             this.label5.Name = "label5";
