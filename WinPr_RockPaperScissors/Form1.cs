@@ -23,47 +23,35 @@ namespace WinPr_RockPaperScissors
         private int win = 0;
         private int lose = 0;
 
-        /* 01~02 */
-
-        /* 3-1 */
-        private void radioButton_Scissors_Click(object sender, EventArgs e)
+        private void button_Scissors_Click(object sender, EventArgs e)
         {
-            if (radioButton_Scissors.Checked == true)
-            {
-                pictureBox_User.Image = Properties.Resources.scissors;
-                PlayGame(1); // '가위'는 1로 설정
-            }
+            rotateFlag = true;
+            pictureBox_User.Image = Properties.Resources.scissors;
+            PlayGame(1); // '가위'는 1로 설정
         }
 
-        /* 3-2 */
-        private void radioButton_Rock_Click(object sender, EventArgs e)
+        private void button_Rock_Click(object sender, EventArgs e)
         {
-            if (radioButton_Rock.Checked == true)
-            {
-                pictureBox_User.Image = Properties.Resources.rock;
-                PlayGame(0); // '바위'는 0로 설정
-            }
+            rotateFlag = true;
+            pictureBox_User.Image = Properties.Resources.rock;
+            PlayGame(0); // '바위'는 0로 설정
         }
 
-        /* 3-3 */
-        // '보' 버튼 클릭 이벤트 핸들러
-        private void radioButton_Paper_Click(object sender, EventArgs e)
+        private void button_Paper_Click(object sender, EventArgs e)
         {
-            if (radioButton_Paper.Checked == true)
-            {
-                pictureBox_User.Image = Properties.Resources.paper;
-                PlayGame(-1); // '보'는 -1로 설정
-            }
+            rotateFlag = true;
+            pictureBox_User.Image = Properties.Resources.paper;
+            PlayGame(-1); // '보'는 -1로 설정
         }
 
         private void PlayGame(int playerChoice)
         {
             Random random = new Random();
-            int R = random.Next(-1, 2);
-            int res = playerChoice - R; // 컴퓨터의 선택 (1=가위, 0=바위, -1=보)
+            int R = random.Next(-1, 2); // 컴퓨터의 선택 (1=가위, 0=바위, -1=보)
+            int res = playerChoice - R;
             if (R == 1) pictureBox_Computer.Image = Properties.Resources.scissors;
             if (R == 0) pictureBox_Computer.Image = Properties.Resources.rock;
-            if (R == -1) pictureBox_Computer.Image = Properties.Resources.paper; // CPU 가위바위보 변경
+            if (R == -1) pictureBox_Computer.Image = Properties.Resources.paper; // CPU 가위바위보 사진 변경
 
             if (res == 2 || res == -1) // 플레이어가 승리하는 경우
             {
@@ -80,6 +68,7 @@ namespace WinPr_RockPaperScissors
                  MessageBox.Show("패배하였습니다");
             }
 
+            // 승리 및 패배 횟수를 화면에 표시
             label3.Text = win.ToString();
             label5.Text = lose.ToString();
 
@@ -91,13 +80,7 @@ namespace WinPr_RockPaperScissors
             {
                 MessageBox.Show("CPU가 3판을 먼저 이겼습니다! 축하합니다!");
             }
-
-            // 승리 및 패배 횟수를 화면에 표시
-            //lblWinCount.Text = "승리: " + winCount.ToString();
-            //lblLoseCount.Text = "패배: " + loseCount.ToString();
         }
-
-        /* 04~05 */
 
         /////////////// 같이 적는 부분 끝! ///////////////
 
