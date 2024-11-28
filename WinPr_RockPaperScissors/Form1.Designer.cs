@@ -86,6 +86,7 @@
             this.MJP_btn.TabIndex = 1;
             this.MJP_btn.Text = "묵찌빠";
             this.MJP_btn.UseVisualStyleBackColor = true;
+            this.MJP_btn.Click += new System.EventHandler(this.MJP_btn_Click);
             // 
             // RSP_btn
             // 

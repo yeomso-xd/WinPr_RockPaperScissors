@@ -22,5 +22,11 @@ namespace WinPr_RockPaperScissors
             Form2 _Form = new Form2();
             _Form.Show();
         }
+
+        private void MJP_btn_Click(object sender, EventArgs e)
+        {
+            Form3 _Form = new Form3();
+            _Form.Show();
+        }
     }
 }

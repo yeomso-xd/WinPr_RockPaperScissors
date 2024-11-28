@@ -82,7 +82,7 @@ namespace WinPr_RockPaperScissors
             }
             else if (lose == 3)
             {
-                MessageBox.Show("CPU가 3판을 먼저 이겼습니다! 축하합니다!");
+                MessageBox.Show("컴퓨터가 3판을 먼저 이겼습니다! 축하합니다!");
                 win = 0;
                 lose = 0;
                 label3.Text = win.ToString();
