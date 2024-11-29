@@ -42,9 +42,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("나눔고딕", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(127, 93);
+            this.label1.Location = new System.Drawing.Point(98, 70);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(442, 61);
+            this.label1.Size = new System.Drawing.Size(344, 46);
             this.label1.TabIndex = 5;
             this.label1.Text = "다같이 가위바위보";
             // 
@@ -54,35 +55,41 @@
             this.groupBox1.Controls.Add(this.omo_btn);
             this.groupBox1.Controls.Add(this.MJP_btn);
             this.groupBox1.Controls.Add(this.RSP_btn);
-            this.groupBox1.Location = new System.Drawing.Point(37, 271);
+            this.groupBox1.Location = new System.Drawing.Point(28, 203);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(600, 400);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(462, 300);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
             // rps15_btn
             // 
-            this.rps15_btn.Location = new System.Drawing.Point(337, 201);
+            this.rps15_btn.Location = new System.Drawing.Point(259, 151);
+            this.rps15_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rps15_btn.Name = "rps15_btn";
-            this.rps15_btn.Size = new System.Drawing.Size(195, 65);
+            this.rps15_btn.Size = new System.Drawing.Size(150, 49);
             this.rps15_btn.TabIndex = 3;
             this.rps15_btn.Text = "rps - 15";
             this.rps15_btn.UseVisualStyleBackColor = true;
             // 
             // omo_btn
             // 
-            this.omo_btn.Location = new System.Drawing.Point(43, 201);
+            this.omo_btn.Location = new System.Drawing.Point(33, 151);
+            this.omo_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.omo_btn.Name = "omo_btn";
-            this.omo_btn.Size = new System.Drawing.Size(195, 65);
+            this.omo_btn.Size = new System.Drawing.Size(150, 49);
             this.omo_btn.TabIndex = 2;
             this.omo_btn.Text = "하나빼기";
             this.omo_btn.UseVisualStyleBackColor = true;
+            this.omo_btn.Click += new System.EventHandler(this.omo_btn_Click);
             // 
             // MJP_btn
             // 
-            this.MJP_btn.Location = new System.Drawing.Point(337, 40);
+            this.MJP_btn.Location = new System.Drawing.Point(259, 30);
+            this.MJP_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MJP_btn.Name = "MJP_btn";
-            this.MJP_btn.Size = new System.Drawing.Size(195, 65);
+            this.MJP_btn.Size = new System.Drawing.Size(150, 49);
             this.MJP_btn.TabIndex = 1;
             this.MJP_btn.Text = "묵찌빠";
             this.MJP_btn.UseVisualStyleBackColor = true;
@@ -90,9 +97,10 @@
             // 
             // RSP_btn
             // 
-            this.RSP_btn.Location = new System.Drawing.Point(43, 40);
+            this.RSP_btn.Location = new System.Drawing.Point(33, 30);
+            this.RSP_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RSP_btn.Name = "RSP_btn";
-            this.RSP_btn.Size = new System.Drawing.Size(195, 65);
+            this.RSP_btn.Size = new System.Drawing.Size(150, 49);
             this.RSP_btn.TabIndex = 0;
             this.RSP_btn.Text = "가위바위보";
             this.RSP_btn.UseVisualStyleBackColor = true;
@@ -100,13 +108,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 764);
+            this.ClientSize = new System.Drawing.Size(518, 573);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "게임 선택";
             this.groupBox1.ResumeLayout(false);

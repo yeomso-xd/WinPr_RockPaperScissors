@@ -28,5 +28,11 @@ namespace WinPr_RockPaperScissors
             Form3 _Form = new Form3();
             _Form.Show();
         }
+
+        private void omo_btn_Click(object sender, EventArgs e)
+        {
+            Form4 _Form = new Form4();
+            _Form.Show();
+        }
     }
 }
