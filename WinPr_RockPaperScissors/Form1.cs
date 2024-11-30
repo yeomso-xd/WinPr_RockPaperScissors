@@ -34,5 +34,12 @@ namespace WinPr_RockPaperScissors
             Form4 _Form = new Form4();
             _Form.Show();
         }
+
+        private void rps15_btn_Click(object sender, EventArgs e)
+        {
+            Form5 _Form = new Form5();
+            _Form.Show();
+            // 한 번에 여러 게임창을 열었을 때 변수명이 겹쳐도 잘 작동되네요! 왜지.
+        }
     }
 }
