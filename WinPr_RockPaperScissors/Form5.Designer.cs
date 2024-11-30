@@ -28,46 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox_Points = new System.Windows.Forms.GroupBox();
+            this.label_LoseCount = new System.Windows.Forms.Label();
+            this.label_Narrator = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_WinCount = new System.Windows.Forms.Label();
             this.pictureBox_Computer = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox2.SuspendLayout();
+            this.pictureBox_Fire = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Scissors = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Snake = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Human = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Tree = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Wolf = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Sponge = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Paper = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Air = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Water = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Dragon = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Devil = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Lightning = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Gun = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Rock = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBox_Points.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Computer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Fire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Scissors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Snake)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Human)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Tree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Wolf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Sponge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Paper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Air)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Water)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dragon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Devil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Lightning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Gun)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rock)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,42 +83,42 @@
             this.label1.Text = "컴퓨터의 선택";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox2
+            // groupBox_Points
             // 
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(157, 202);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(118, 119);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "점수창";
+            this.groupBox_Points.Controls.Add(this.label_LoseCount);
+            this.groupBox_Points.Controls.Add(this.label_Narrator);
+            this.groupBox_Points.Controls.Add(this.label4);
+            this.groupBox_Points.Controls.Add(this.label_WinCount);
+            this.groupBox_Points.Location = new System.Drawing.Point(157, 202);
+            this.groupBox_Points.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox_Points.Name = "groupBox_Points";
+            this.groupBox_Points.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox_Points.Size = new System.Drawing.Size(118, 119);
+            this.groupBox_Points.TabIndex = 25;
+            this.groupBox_Points.TabStop = false;
+            this.groupBox_Points.Text = "점수창";
             // 
-            // label5
+            // label_LoseCount
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.ForeColor = System.Drawing.Color.IndianRed;
-            this.label5.Location = new System.Drawing.Point(65, 38);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 27);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "0";
+            this.label_LoseCount.AutoSize = true;
+            this.label_LoseCount.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_LoseCount.ForeColor = System.Drawing.Color.IndianRed;
+            this.label_LoseCount.Location = new System.Drawing.Point(65, 38);
+            this.label_LoseCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_LoseCount.Name = "label_LoseCount";
+            this.label_LoseCount.Size = new System.Drawing.Size(29, 27);
+            this.label_LoseCount.TabIndex = 8;
+            this.label_LoseCount.Text = "0";
             // 
-            // label6
+            // label_Narrator
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 80);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 12);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "게임을 시작하지.";
+            this.label_Narrator.AutoSize = true;
+            this.label_Narrator.Location = new System.Drawing.Point(12, 80);
+            this.label_Narrator.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_Narrator.Name = "label_Narrator";
+            this.label_Narrator.Size = new System.Drawing.Size(97, 12);
+            this.label_Narrator.TabIndex = 9;
+            this.label_Narrator.Text = "게임을 시작하지.";
             // 
             // label4
             // 
@@ -129,179 +131,231 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "/";
             // 
-            // label3
+            // label_WinCount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label3.Location = new System.Drawing.Point(26, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 27);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "0";
+            this.label_WinCount.AutoSize = true;
+            this.label_WinCount.Font = new System.Drawing.Font("Gulim", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_WinCount.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label_WinCount.Location = new System.Drawing.Point(26, 38);
+            this.label_WinCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_WinCount.Name = "label_WinCount";
+            this.label_WinCount.Size = new System.Drawing.Size(29, 27);
+            this.label_WinCount.TabIndex = 6;
+            this.label_WinCount.Text = "0";
             // 
             // pictureBox_Computer
             // 
             this.pictureBox_Computer.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_rock;
             this.pictureBox_Computer.InitialImage = global::WinPr_RockPaperScissors.Properties.Resources.rock;
             this.pictureBox_Computer.Location = new System.Drawing.Point(308, 221);
-            this.pictureBox_Computer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox_Computer.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox_Computer.Name = "pictureBox_Computer";
             this.pictureBox_Computer.Size = new System.Drawing.Size(100, 100);
             this.pictureBox_Computer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Computer.TabIndex = 23;
             this.pictureBox_Computer.TabStop = false;
             // 
-            // pictureBox15
+            // pictureBox_Fire
             // 
-            this.pictureBox15.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_fire;
-            this.pictureBox15.Location = new System.Drawing.Point(113, 59);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
+            this.pictureBox_Fire.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Fire.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_fire;
+            this.pictureBox_Fire.Location = new System.Drawing.Point(113, 59);
+            this.pictureBox_Fire.Name = "pictureBox_Fire";
+            this.pictureBox_Fire.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Fire.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Fire.TabIndex = 0;
+            this.pictureBox_Fire.TabStop = false;
+            this.pictureBox_Fire.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Fire, "불 (Fire)");
             // 
-            // pictureBox14
+            // pictureBox_Scissors
             // 
-            this.pictureBox14.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_scissors;
-            this.pictureBox14.Location = new System.Drawing.Point(51, 124);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 0;
-            this.pictureBox14.TabStop = false;
+            this.pictureBox_Scissors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Scissors.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_scissors;
+            this.pictureBox_Scissors.Location = new System.Drawing.Point(51, 124);
+            this.pictureBox_Scissors.Name = "pictureBox_Scissors";
+            this.pictureBox_Scissors.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Scissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Scissors.TabIndex = 0;
+            this.pictureBox_Scissors.TabStop = false;
+            this.pictureBox_Scissors.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Scissors, "가위 (Scissors)");
             // 
-            // pictureBox13
+            // pictureBox_Snake
             // 
-            this.pictureBox13.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_snake;
-            this.pictureBox13.Location = new System.Drawing.Point(22, 209);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 0;
-            this.pictureBox13.TabStop = false;
+            this.pictureBox_Snake.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Snake.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_snake;
+            this.pictureBox_Snake.Location = new System.Drawing.Point(22, 209);
+            this.pictureBox_Snake.Name = "pictureBox_Snake";
+            this.pictureBox_Snake.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Snake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Snake.TabIndex = 0;
+            this.pictureBox_Snake.TabStop = false;
+            this.pictureBox_Snake.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Snake, "뱀 (Snake)");
             // 
-            // pictureBox12
+            // pictureBox_Human
             // 
-            this.pictureBox12.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_human;
-            this.pictureBox12.Location = new System.Drawing.Point(31, 298);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 0;
-            this.pictureBox12.TabStop = false;
+            this.pictureBox_Human.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Human.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_human;
+            this.pictureBox_Human.Location = new System.Drawing.Point(31, 298);
+            this.pictureBox_Human.Name = "pictureBox_Human";
+            this.pictureBox_Human.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Human.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Human.TabIndex = 0;
+            this.pictureBox_Human.TabStop = false;
+            this.pictureBox_Human.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Human, "사람 (Human)");
             // 
-            // pictureBox11
+            // pictureBox_Tree
             // 
-            this.pictureBox11.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_tree;
-            this.pictureBox11.Location = new System.Drawing.Point(79, 374);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 0;
-            this.pictureBox11.TabStop = false;
+            this.pictureBox_Tree.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Tree.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_tree;
+            this.pictureBox_Tree.Location = new System.Drawing.Point(79, 374);
+            this.pictureBox_Tree.Name = "pictureBox_Tree";
+            this.pictureBox_Tree.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Tree.TabIndex = 0;
+            this.pictureBox_Tree.TabStop = false;
+            this.pictureBox_Tree.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Tree, "나무 (Tree)");
             // 
-            // pictureBox10
+            // pictureBox_Wolf
             // 
-            this.pictureBox10.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_wolf;
-            this.pictureBox10.Location = new System.Drawing.Point(155, 427);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
+            this.pictureBox_Wolf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Wolf.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_wolf;
+            this.pictureBox_Wolf.Location = new System.Drawing.Point(155, 427);
+            this.pictureBox_Wolf.Name = "pictureBox_Wolf";
+            this.pictureBox_Wolf.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Wolf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Wolf.TabIndex = 0;
+            this.pictureBox_Wolf.TabStop = false;
+            this.pictureBox_Wolf.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Wolf, "늑대 (Wolf)");
             // 
-            // pictureBox9
+            // pictureBox_Sponge
             // 
-            this.pictureBox9.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_sponge;
-            this.pictureBox9.Location = new System.Drawing.Point(247, 446);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
+            this.pictureBox_Sponge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Sponge.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_sponge;
+            this.pictureBox_Sponge.Location = new System.Drawing.Point(247, 446);
+            this.pictureBox_Sponge.Name = "pictureBox_Sponge";
+            this.pictureBox_Sponge.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Sponge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Sponge.TabIndex = 0;
+            this.pictureBox_Sponge.TabStop = false;
+            this.pictureBox_Sponge.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Sponge, "스펀지 (Sponge)");
             // 
-            // pictureBox8
+            // pictureBox_Paper
             // 
-            this.pictureBox8.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_paper;
-            this.pictureBox8.Location = new System.Drawing.Point(338, 427);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
+            this.pictureBox_Paper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Paper.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_paper;
+            this.pictureBox_Paper.Location = new System.Drawing.Point(338, 427);
+            this.pictureBox_Paper.Name = "pictureBox_Paper";
+            this.pictureBox_Paper.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Paper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Paper.TabIndex = 0;
+            this.pictureBox_Paper.TabStop = false;
+            this.pictureBox_Paper.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Paper, "보 (Paper)");
             // 
-            // pictureBox7
+            // pictureBox_Air
             // 
-            this.pictureBox7.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_air;
-            this.pictureBox7.Location = new System.Drawing.Point(414, 374);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.pictureBox_Air.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Air.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_air;
+            this.pictureBox_Air.Location = new System.Drawing.Point(414, 374);
+            this.pictureBox_Air.Name = "pictureBox_Air";
+            this.pictureBox_Air.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Air.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Air.TabIndex = 0;
+            this.pictureBox_Air.TabStop = false;
+            this.pictureBox_Air.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Air, "공기 (Air)");
             // 
-            // pictureBox6
+            // pictureBox_Water
             // 
-            this.pictureBox6.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_water;
-            this.pictureBox6.Location = new System.Drawing.Point(461, 298);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox_Water.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Water.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_water;
+            this.pictureBox_Water.Location = new System.Drawing.Point(461, 298);
+            this.pictureBox_Water.Name = "pictureBox_Water";
+            this.pictureBox_Water.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Water.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Water.TabIndex = 0;
+            this.pictureBox_Water.TabStop = false;
+            this.pictureBox_Water.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Water, "물 (Water)");
             // 
-            // pictureBox5
+            // pictureBox_Dragon
             // 
-            this.pictureBox5.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_dragon;
-            this.pictureBox5.Location = new System.Drawing.Point(471, 210);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.pictureBox_Dragon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Dragon.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_dragon;
+            this.pictureBox_Dragon.Location = new System.Drawing.Point(471, 210);
+            this.pictureBox_Dragon.Name = "pictureBox_Dragon";
+            this.pictureBox_Dragon.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Dragon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Dragon.TabIndex = 0;
+            this.pictureBox_Dragon.TabStop = false;
+            this.pictureBox_Dragon.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Dragon, "드래곤 (Dragon)");
             // 
-            // pictureBox4
+            // pictureBox_Devil
             // 
-            this.pictureBox4.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_devil;
-            this.pictureBox4.Location = new System.Drawing.Point(441, 124);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.pictureBox_Devil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Devil.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_devil;
+            this.pictureBox_Devil.Location = new System.Drawing.Point(441, 124);
+            this.pictureBox_Devil.Name = "pictureBox_Devil";
+            this.pictureBox_Devil.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Devil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Devil.TabIndex = 0;
+            this.pictureBox_Devil.TabStop = false;
+            this.pictureBox_Devil.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Devil, "악마 (Devil)");
             // 
-            // pictureBox3
+            // pictureBox_Lightning
             // 
-            this.pictureBox3.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_lightning;
-            this.pictureBox3.Location = new System.Drawing.Point(379, 59);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox_Lightning.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Lightning.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_lightning;
+            this.pictureBox_Lightning.Location = new System.Drawing.Point(379, 59);
+            this.pictureBox_Lightning.Name = "pictureBox_Lightning";
+            this.pictureBox_Lightning.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Lightning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Lightning.TabIndex = 0;
+            this.pictureBox_Lightning.TabStop = false;
+            this.pictureBox_Lightning.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Lightning, "번개 (Lightning)");
             // 
-            // pictureBox2
+            // pictureBox_Gun
             // 
-            this.pictureBox2.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_gun;
-            this.pictureBox2.Location = new System.Drawing.Point(292, 24);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox_Gun.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Gun.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_gun;
+            this.pictureBox_Gun.Location = new System.Drawing.Point(292, 24);
+            this.pictureBox_Gun.Name = "pictureBox_Gun";
+            this.pictureBox_Gun.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Gun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Gun.TabIndex = 0;
+            this.pictureBox_Gun.TabStop = false;
+            this.pictureBox_Gun.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Gun, "총 (Gun)");
             // 
-            // pictureBox1
+            // pictureBox_Rock
             // 
-            this.pictureBox1.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_rock;
-            this.pictureBox1.Location = new System.Drawing.Point(199, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_Rock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Rock.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_rock;
+            this.pictureBox_Rock.Location = new System.Drawing.Point(199, 24);
+            this.pictureBox_Rock.Name = "pictureBox_Rock";
+            this.pictureBox_Rock.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox_Rock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Rock.TabIndex = 0;
+            this.pictureBox_Rock.TabStop = false;
+            this.pictureBox_Rock.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox_Rock, "주먹 (Rock)");
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutomaticDelay = 0;
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 100;
+            this.toolTip1.ReshowDelay = 100;
             // 
             // Form5
             // 
@@ -311,44 +365,44 @@
             this.ClientSize = new System.Drawing.Size(564, 541);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox_Computer);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox_Points);
+            this.Controls.Add(this.pictureBox_Fire);
+            this.Controls.Add(this.pictureBox_Scissors);
+            this.Controls.Add(this.pictureBox_Snake);
+            this.Controls.Add(this.pictureBox_Human);
+            this.Controls.Add(this.pictureBox_Tree);
+            this.Controls.Add(this.pictureBox_Wolf);
+            this.Controls.Add(this.pictureBox_Sponge);
+            this.Controls.Add(this.pictureBox_Paper);
+            this.Controls.Add(this.pictureBox_Air);
+            this.Controls.Add(this.pictureBox_Water);
+            this.Controls.Add(this.pictureBox_Dragon);
+            this.Controls.Add(this.pictureBox_Devil);
+            this.Controls.Add(this.pictureBox_Lightning);
+            this.Controls.Add(this.pictureBox_Gun);
+            this.Controls.Add(this.pictureBox_Rock);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form5";
             this.Text = "RPS-15";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox_Points.ResumeLayout(false);
+            this.groupBox_Points.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Computer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Fire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Scissors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Snake)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Human)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Tree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Wolf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Sponge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Paper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Air)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Water)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dragon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Devil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Lightning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Gun)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,27 +410,28 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox_Rock;
+        private System.Windows.Forms.PictureBox pictureBox_Gun;
+        private System.Windows.Forms.PictureBox pictureBox_Lightning;
+        private System.Windows.Forms.PictureBox pictureBox_Devil;
+        private System.Windows.Forms.PictureBox pictureBox_Dragon;
+        private System.Windows.Forms.PictureBox pictureBox_Water;
+        private System.Windows.Forms.PictureBox pictureBox_Air;
+        private System.Windows.Forms.PictureBox pictureBox_Paper;
+        private System.Windows.Forms.PictureBox pictureBox_Sponge;
+        private System.Windows.Forms.PictureBox pictureBox_Wolf;
+        private System.Windows.Forms.PictureBox pictureBox_Tree;
+        private System.Windows.Forms.PictureBox pictureBox_Human;
+        private System.Windows.Forms.PictureBox pictureBox_Snake;
+        private System.Windows.Forms.PictureBox pictureBox_Scissors;
+        private System.Windows.Forms.PictureBox pictureBox_Fire;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox_Computer;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox_Points;
+        private System.Windows.Forms.Label label_LoseCount;
+        private System.Windows.Forms.Label label_Narrator;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_WinCount;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
