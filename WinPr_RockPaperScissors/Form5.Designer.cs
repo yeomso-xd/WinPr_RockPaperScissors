@@ -53,6 +53,7 @@
             this.pictureBox_Gun = new System.Windows.Forms.PictureBox();
             this.pictureBox_Rock = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox_Points.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Computer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Fire)).BeginInit();
@@ -357,12 +358,26 @@
             this.toolTip1.InitialDelay = 100;
             this.toolTip1.ReshowDelay = 100;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(459, 508);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(95, 24);
+            this.linkLabel1.TabIndex = 26;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "RPS-15\r\n규칙 설명 (영문)";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.linkLabel1, "https://www.umop.com/rps15.htm");
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(564, 541);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox_Computer);
             this.Controls.Add(this.groupBox_Points);
@@ -433,5 +448,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label_WinCount;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
