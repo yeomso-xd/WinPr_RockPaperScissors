@@ -61,7 +61,7 @@ namespace WinPr_RockPaperScissors
             GenerateComputerChoices1();
         }
 
-        // 네 번째 버튼 (가위) 클릭 시, 두 번째 사용자 선택 처리 및 컴퓨터 선택 호출
+        // 두 번째 사용자 선택 (가위)
         private void button_Scissors2_Click(object sender, EventArgs e)
         {
             userChoice2 = "scissors";
@@ -121,8 +121,6 @@ namespace WinPr_RockPaperScissors
             pictureBox_User1.Padding = new Padding(3);  // 테두리 두께 설정
             pictureBox_User1.BackColor = Color.Red;  // 테두리 색상 설정
 
-            GenerateComputerChoiceForUserSelection();  // 컴퓨터의 선택을 랜덤으로 결정하고 테두리 색상 변경
-
             EvaluateResult(userChoice1);  // 선택한 값과 컴퓨터의 선택을 비교하여 결과 판별
         }
 
@@ -133,8 +131,6 @@ namespace WinPr_RockPaperScissors
             pictureBox_User2.Padding = new Padding(3);  // 테두리 두께 설정
             pictureBox_User2.BackColor = Color.Red;  // 테두리 색상 설정
 
-            GenerateComputerChoiceForUserSelection();  // 컴퓨터의 선택을 랜덤으로 결정하고 테두리 색상 변경
-
             EvaluateResult(userChoice2);  // 선택한 값과 컴퓨터의 선택을 비교하여 결과 판별
         }
 
@@ -143,14 +139,26 @@ namespace WinPr_RockPaperScissors
         {
             Random random = new Random();
             string computerFinalChoice = random.Next(2) == 0 ? computerChoice1 : computerChoice2; // 컴퓨터의 최종 선택
+            if (computerFinalChoice == computerChoice1)
+            {
+                pictureBox_Computer1.BorderStyle = BorderStyle.FixedSingle;
+                pictureBox_Computer1.Padding = new Padding(3);
+                pictureBox_Computer1.BackColor = Color.Blue;
+            }
+            else
+            {
+                pictureBox_Computer2.BorderStyle = BorderStyle.FixedSingle;
+                pictureBox_Computer2.Padding = new Padding(3);
+                pictureBox_Computer2.BackColor = Color.Blue;
+            }
 
             // 승리 판정: 사용자와 컴퓨터의 선택 비교
             if ((userFinalChoice == "scissors" && computerFinalChoice == "paper") ||
                 (userFinalChoice == "rock" && computerFinalChoice == "scissors") ||
                 (userFinalChoice == "paper" && computerFinalChoice == "rock"))
             {
-                userWins++;  // 사용자 승리 시 점수 증가
-                MessageBox.Show("이번 라운드는 당신의 승리!");
+               MessageBox.Show("이번 라운드는 당신의 승리!");
+               userWins++;  // 사용자 승리 시 점수 증가
             }
             else if (userFinalChoice == computerFinalChoice)
             {
@@ -158,8 +166,8 @@ namespace WinPr_RockPaperScissors
             }
             else
             {
-                computerWins++;  // 컴퓨터 승리 시 점수 증가
                 MessageBox.Show("이번 라운드는 컴퓨터의 승리!");
+                computerWins++;  // 컴퓨터 승리 시 점수 증가
             }
 
             UpdateScore();  // 점수 업데이트
@@ -229,36 +237,6 @@ namespace WinPr_RockPaperScissors
 
             pictureBox_Computer2.BorderStyle = BorderStyle.None;
             pictureBox_Computer2.BackColor = Color.Transparent;
-        }
-
-        // 컴퓨터의 선택을 랜덤으로 결정하고, 선택된 PictureBox에 테두리 색상 적용
-        private void GenerateComputerChoiceForUserSelection()
-        {
-            Random random = new Random();
-            string[] options = { "scissors", "rock", "paper" };
-
-            // 컴퓨터의 선택을 랜덤으로 결정
-            string computerChoice = options[random.Next(3)];
-
-            // 컴퓨터 선택에 맞는 pictureBox에 파란색 테두리 적용
-            if (computerChoice == "scissors")
-            {
-                pictureBox_Computer1.BorderStyle = BorderStyle.FixedSingle;
-                pictureBox_Computer1.Padding = new Padding(3);
-                pictureBox_Computer1.BackColor = Color.Blue;
-            }
-            else if (computerChoice == "rock")
-            {
-                pictureBox_Computer2.BorderStyle = BorderStyle.FixedSingle;
-                pictureBox_Computer2.Padding = new Padding(3);
-                pictureBox_Computer2.BackColor = Color.Blue;
-            }
-            else if (computerChoice == "paper")
-            {
-                pictureBox_Computer1.BorderStyle = BorderStyle.FixedSingle;
-                pictureBox_Computer1.Padding = new Padding(3);
-                pictureBox_Computer1.BackColor = Color.Blue;
-            }
         }
     }
 }
