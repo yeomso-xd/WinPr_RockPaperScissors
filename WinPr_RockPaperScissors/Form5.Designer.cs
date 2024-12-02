@@ -76,10 +76,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(592, 406);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(319, 203);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 24);
+            this.label1.Size = new System.Drawing.Size(81, 12);
             this.label1.TabIndex = 24;
             this.label1.Text = "컴퓨터의 선택";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -90,11 +90,11 @@
             this.groupBox_Points.Controls.Add(this.label_Narrator);
             this.groupBox_Points.Controls.Add(this.label4);
             this.groupBox_Points.Controls.Add(this.label_WinCount);
-            this.groupBox_Points.Location = new System.Drawing.Point(292, 404);
-            this.groupBox_Points.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_Points.Location = new System.Drawing.Point(157, 202);
+            this.groupBox_Points.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox_Points.Name = "groupBox_Points";
-            this.groupBox_Points.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox_Points.Size = new System.Drawing.Size(219, 238);
+            this.groupBox_Points.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_Points.Size = new System.Drawing.Size(118, 119);
             this.groupBox_Points.TabIndex = 25;
             this.groupBox_Points.TabStop = false;
             this.groupBox_Points.Text = "점수창";
@@ -104,20 +104,20 @@
             this.label_LoseCount.AutoSize = true;
             this.label_LoseCount.Font = new System.Drawing.Font("굴림", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_LoseCount.ForeColor = System.Drawing.Color.IndianRed;
-            this.label_LoseCount.Location = new System.Drawing.Point(121, 76);
-            this.label_LoseCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_LoseCount.Location = new System.Drawing.Point(65, 38);
+            this.label_LoseCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_LoseCount.Name = "label_LoseCount";
-            this.label_LoseCount.Size = new System.Drawing.Size(54, 53);
+            this.label_LoseCount.Size = new System.Drawing.Size(29, 27);
             this.label_LoseCount.TabIndex = 8;
             this.label_LoseCount.Text = "0";
             // 
             // label_Narrator
             // 
             this.label_Narrator.AutoSize = true;
-            this.label_Narrator.Location = new System.Drawing.Point(22, 160);
-            this.label_Narrator.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Narrator.Location = new System.Drawing.Point(12, 80);
+            this.label_Narrator.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Narrator.Name = "label_Narrator";
-            this.label_Narrator.Size = new System.Drawing.Size(194, 24);
+            this.label_Narrator.Size = new System.Drawing.Size(97, 12);
             this.label_Narrator.TabIndex = 9;
             this.label_Narrator.Text = "게임을 시작하지.";
             // 
@@ -125,10 +125,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("굴림", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(91, 76);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(49, 38);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 53);
+            this.label4.Size = new System.Drawing.Size(24, 27);
             this.label4.TabIndex = 7;
             this.label4.Text = "/";
             // 
@@ -137,10 +137,10 @@
             this.label_WinCount.AutoSize = true;
             this.label_WinCount.Font = new System.Drawing.Font("굴림", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_WinCount.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label_WinCount.Location = new System.Drawing.Point(48, 76);
-            this.label_WinCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_WinCount.Location = new System.Drawing.Point(26, 38);
+            this.label_WinCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_WinCount.Name = "label_WinCount";
-            this.label_WinCount.Size = new System.Drawing.Size(54, 53);
+            this.label_WinCount.Size = new System.Drawing.Size(29, 27);
             this.label_WinCount.TabIndex = 6;
             this.label_WinCount.Text = "0";
             // 
@@ -148,10 +148,10 @@
             // 
             this.pictureBox_Computer.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_rock;
             this.pictureBox_Computer.InitialImage = global::WinPr_RockPaperScissors.Properties.Resources.rock;
-            this.pictureBox_Computer.Location = new System.Drawing.Point(572, 442);
-            this.pictureBox_Computer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox_Computer.Location = new System.Drawing.Point(308, 221);
+            this.pictureBox_Computer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox_Computer.Name = "pictureBox_Computer";
-            this.pictureBox_Computer.Size = new System.Drawing.Size(186, 200);
+            this.pictureBox_Computer.Size = new System.Drawing.Size(100, 100);
             this.pictureBox_Computer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Computer.TabIndex = 23;
             this.pictureBox_Computer.TabStop = false;
@@ -160,10 +160,9 @@
             // 
             this.pictureBox_Fire.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Fire.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_fire;
-            this.pictureBox_Fire.Location = new System.Drawing.Point(210, 118);
-            this.pictureBox_Fire.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Fire.Location = new System.Drawing.Point(113, 59);
             this.pictureBox_Fire.Name = "pictureBox_Fire";
-            this.pictureBox_Fire.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Fire.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Fire.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Fire.TabIndex = 0;
             this.pictureBox_Fire.TabStop = false;
@@ -174,10 +173,9 @@
             // 
             this.pictureBox_Scissors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Scissors.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_scissors;
-            this.pictureBox_Scissors.Location = new System.Drawing.Point(95, 248);
-            this.pictureBox_Scissors.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Scissors.Location = new System.Drawing.Point(51, 124);
             this.pictureBox_Scissors.Name = "pictureBox_Scissors";
-            this.pictureBox_Scissors.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Scissors.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Scissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Scissors.TabIndex = 0;
             this.pictureBox_Scissors.TabStop = false;
@@ -188,10 +186,9 @@
             // 
             this.pictureBox_Snake.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Snake.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_snake;
-            this.pictureBox_Snake.Location = new System.Drawing.Point(41, 418);
-            this.pictureBox_Snake.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Snake.Location = new System.Drawing.Point(22, 209);
             this.pictureBox_Snake.Name = "pictureBox_Snake";
-            this.pictureBox_Snake.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Snake.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Snake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Snake.TabIndex = 0;
             this.pictureBox_Snake.TabStop = false;
@@ -202,10 +199,9 @@
             // 
             this.pictureBox_Human.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Human.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_human;
-            this.pictureBox_Human.Location = new System.Drawing.Point(58, 596);
-            this.pictureBox_Human.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Human.Location = new System.Drawing.Point(31, 298);
             this.pictureBox_Human.Name = "pictureBox_Human";
-            this.pictureBox_Human.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Human.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Human.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Human.TabIndex = 0;
             this.pictureBox_Human.TabStop = false;
@@ -216,10 +212,9 @@
             // 
             this.pictureBox_Tree.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Tree.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_tree;
-            this.pictureBox_Tree.Location = new System.Drawing.Point(147, 748);
-            this.pictureBox_Tree.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Tree.Location = new System.Drawing.Point(79, 374);
             this.pictureBox_Tree.Name = "pictureBox_Tree";
-            this.pictureBox_Tree.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Tree.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Tree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Tree.TabIndex = 0;
             this.pictureBox_Tree.TabStop = false;
@@ -230,10 +225,9 @@
             // 
             this.pictureBox_Wolf.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Wolf.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_wolf;
-            this.pictureBox_Wolf.Location = new System.Drawing.Point(288, 854);
-            this.pictureBox_Wolf.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Wolf.Location = new System.Drawing.Point(155, 427);
             this.pictureBox_Wolf.Name = "pictureBox_Wolf";
-            this.pictureBox_Wolf.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Wolf.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Wolf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Wolf.TabIndex = 0;
             this.pictureBox_Wolf.TabStop = false;
@@ -244,10 +238,9 @@
             // 
             this.pictureBox_Sponge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Sponge.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_sponge;
-            this.pictureBox_Sponge.Location = new System.Drawing.Point(459, 892);
-            this.pictureBox_Sponge.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Sponge.Location = new System.Drawing.Point(247, 446);
             this.pictureBox_Sponge.Name = "pictureBox_Sponge";
-            this.pictureBox_Sponge.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Sponge.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Sponge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Sponge.TabIndex = 0;
             this.pictureBox_Sponge.TabStop = false;
@@ -258,10 +251,9 @@
             // 
             this.pictureBox_Paper.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Paper.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_paper;
-            this.pictureBox_Paper.Location = new System.Drawing.Point(628, 854);
-            this.pictureBox_Paper.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Paper.Location = new System.Drawing.Point(338, 427);
             this.pictureBox_Paper.Name = "pictureBox_Paper";
-            this.pictureBox_Paper.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Paper.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Paper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Paper.TabIndex = 0;
             this.pictureBox_Paper.TabStop = false;
@@ -272,10 +264,9 @@
             // 
             this.pictureBox_Air.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Air.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_air;
-            this.pictureBox_Air.Location = new System.Drawing.Point(769, 748);
-            this.pictureBox_Air.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Air.Location = new System.Drawing.Point(414, 374);
             this.pictureBox_Air.Name = "pictureBox_Air";
-            this.pictureBox_Air.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Air.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Air.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Air.TabIndex = 0;
             this.pictureBox_Air.TabStop = false;
@@ -286,10 +277,9 @@
             // 
             this.pictureBox_Water.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Water.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_water;
-            this.pictureBox_Water.Location = new System.Drawing.Point(856, 596);
-            this.pictureBox_Water.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Water.Location = new System.Drawing.Point(461, 298);
             this.pictureBox_Water.Name = "pictureBox_Water";
-            this.pictureBox_Water.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Water.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Water.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Water.TabIndex = 0;
             this.pictureBox_Water.TabStop = false;
@@ -300,10 +290,9 @@
             // 
             this.pictureBox_Dragon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Dragon.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_dragon;
-            this.pictureBox_Dragon.Location = new System.Drawing.Point(875, 420);
-            this.pictureBox_Dragon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Dragon.Location = new System.Drawing.Point(471, 210);
             this.pictureBox_Dragon.Name = "pictureBox_Dragon";
-            this.pictureBox_Dragon.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Dragon.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Dragon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Dragon.TabIndex = 0;
             this.pictureBox_Dragon.TabStop = false;
@@ -314,10 +303,9 @@
             // 
             this.pictureBox_Devil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Devil.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_devil;
-            this.pictureBox_Devil.Location = new System.Drawing.Point(819, 248);
-            this.pictureBox_Devil.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Devil.Location = new System.Drawing.Point(441, 124);
             this.pictureBox_Devil.Name = "pictureBox_Devil";
-            this.pictureBox_Devil.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Devil.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Devil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Devil.TabIndex = 0;
             this.pictureBox_Devil.TabStop = false;
@@ -328,10 +316,9 @@
             // 
             this.pictureBox_Lightning.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Lightning.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_lightning;
-            this.pictureBox_Lightning.Location = new System.Drawing.Point(704, 118);
-            this.pictureBox_Lightning.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Lightning.Location = new System.Drawing.Point(379, 59);
             this.pictureBox_Lightning.Name = "pictureBox_Lightning";
-            this.pictureBox_Lightning.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Lightning.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Lightning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Lightning.TabIndex = 0;
             this.pictureBox_Lightning.TabStop = false;
@@ -342,10 +329,9 @@
             // 
             this.pictureBox_Gun.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Gun.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_gun;
-            this.pictureBox_Gun.Location = new System.Drawing.Point(542, 48);
-            this.pictureBox_Gun.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Gun.Location = new System.Drawing.Point(292, 24);
             this.pictureBox_Gun.Name = "pictureBox_Gun";
-            this.pictureBox_Gun.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Gun.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Gun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Gun.TabIndex = 0;
             this.pictureBox_Gun.TabStop = false;
@@ -356,10 +342,9 @@
             // 
             this.pictureBox_Rock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Rock.Image = global::WinPr_RockPaperScissors.Properties.Resources._15_rock;
-            this.pictureBox_Rock.Location = new System.Drawing.Point(370, 48);
-            this.pictureBox_Rock.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox_Rock.Location = new System.Drawing.Point(199, 24);
             this.pictureBox_Rock.Name = "pictureBox_Rock";
-            this.pictureBox_Rock.Size = new System.Drawing.Size(130, 140);
+            this.pictureBox_Rock.Size = new System.Drawing.Size(70, 70);
             this.pictureBox_Rock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Rock.TabIndex = 0;
             this.pictureBox_Rock.TabStop = false;
@@ -376,10 +361,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(852, 1016);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(459, 508);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(186, 48);
+            this.linkLabel1.Size = new System.Drawing.Size(95, 24);
             this.linkLabel1.TabIndex = 26;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "RPS-15\r\n규칙 설명 (영문)";
@@ -389,10 +373,10 @@
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1047, 1082);
+            this.ClientSize = new System.Drawing.Size(564, 541);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox_Computer);
@@ -413,7 +397,7 @@
             this.Controls.Add(this.pictureBox_Rock);
             this.Controls.Add(this.pictureBox_Fire);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5";
             this.Text = "RPS-15";
             this.groupBox_Points.ResumeLayout(false);
