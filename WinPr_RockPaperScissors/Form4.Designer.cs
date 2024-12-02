@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button_Paper1 = new System.Windows.Forms.Button();
             this.button_Rock1 = new System.Windows.Forms.Button();
@@ -308,6 +309,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox_Computer1);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form4";
             this.Text = "하나빼기";
